@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t;
+	cin>>t;
+	while(t!=0)
+	{
+		int i,j;
+		cin>>i;
+		cin>>j;
+		if(i==j)
+		{
+			if(i%2==0)
+			{
+				cout<<2*i<<"\n";
+			}
+			else cout<<2*i-1<<"\n";
+		}
+		else if(j==(i-2))
+		{
+			if(i%2==0&&j%2==0)
+			{
+				cout<<i+j<<"\n";
+			}
+			else cout<<i+j-1<<"\n";
+		}
+		else cout<<"No Number"<<"\n";
+	
+	t--;
+    }  
+}
