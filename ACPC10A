@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t=1;
+	while(t!=0)
+	{
+		double i,j,k,d;
+		cin>>i;
+		cin>>j;
+		cin>>k;
+		if(i==0&&j==0&&k==0)return 0;
+		if(j==(i+k)/2)
+		{
+			d=k-j;
+			cout<<"AP "<<k+d<<"\n";
+			
+		}
+		else if ((j*j)==(i*k))
+		{
+			d=k/j;
+			cout<<"GP "<<k*d<<"\n";
+		}
+		
+	}  return 0;
+}
