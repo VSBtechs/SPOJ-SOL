@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    long double t,n,m;
+	int k=0,i,res[1000];
+	
+	while(t!=0.00)
+	{
+		cin>>t;
+		if(t==0.00)return 0;
+	long double sum=0.00;
+		for(i=2;;i++)
+		{
+			sum=sum+((double)1/i);
+			if(sum>=t)
+			{
+				cout<<i-1<<" card(s)"<<"\n";
+				break;
+			}
+		}
+	}
+	return 0;
+
+}
+		
