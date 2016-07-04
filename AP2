@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t,i,j;
+	cin>>t;
+    long long signed int th[t],thl[t],s[t],res[t],a[t];
+    for(i=0;i<t;i++)
+    {
+    	cin>>th[i];
+    	cin>>thl[i];
+    	cin>>s[i];
+    	res[i]=(2*s[i])/(th[i]+thl[i]);    	
+	}
+	for(i=0;i<t;i++)
+	{
+		cout<<res[i]<<"\n";
+		if(res[i]<7)return 0;
+		a[i]=(res[i]*th[i]-2*thl[i]-3*th[i])/(res[i]-5);
+		for(j=1;j<=res[i];j++)
+		cout<<(a[i]+((j-1)*((thl[i]-th[i])/(res[i]-5))))<<" ";
+		cout<<"\n";
+	}
+    
+}
