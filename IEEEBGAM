@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t,i;
+	cin>>t;
+	int n[t];
+	long double res[t];
+	for(i=0;i<t;i++)
+	{
+		cin>>n[i];
+		if(n[i]>1000)return 0;
+		cout.precision(8);
+	    cout <<fixed;
+	    res[i]=((long double)n[i]/(n[i]+1));
+		
+	}
+	for(i=0;i<t;i++)
+	{
+		cout<<res[i]<<"\n";
+	}
+	
+}
