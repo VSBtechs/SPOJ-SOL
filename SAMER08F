@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t;
+	int i=0,j,te=0,res[100];
+	
+	do
+	{
+		cin>>t;
+		if(t<0||t>100);
+		int sum=0;
+		for(i=1;i<=t;i++)
+		sum=sum+(i*i);
+		res[te]=sum;
+		te++;
+		j=te;
+		
+	}while(t!=0);
+	for(i=0;i<j-1;i++)
+	{
+		cout<<res[i]<<"\n";
+	}
+	
+	return 0;
+}
+
