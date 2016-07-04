@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	string s;
+	while(s[0]!='*')
+	{
+		int i,count=0,ount=0; 
+		getline(cin,s);
+		if(s[0]=='*')return 0;
+		int l=s.length();
+		for(i=0;i<l;i++)
+		{
+			if(s[i]==' ')ount++;
+		    if(s[i]==' '&&(s[i+1]==s[0]||s[i+1]==s[0]+(char)32||s[i+1]==s[0]-(char)32))
+		        {
+		            count++;
+		        }
+		}
+		if(count==ount)
+		{
+			cout<<"Y"<<"\n";
+		}
+		else
+		{
+			cout<<"N"<<"\n";
+		}
+	}
+	return 0;
+	
+}
